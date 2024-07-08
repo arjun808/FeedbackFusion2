@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className='p-4 md:p-6 shadow-md'>
         <div className='container flex justify-between mx-auto flex-col md:flex-row items-center'>
-            <a href='#' className='text-xl font-bold mb-4 md:mb-0'>Mystery Messages</a>
+            <a href='#' className='text-xl font-bold mb-4 md:mb-0'>FeedbackFusion</a>
             {
                 session ? (
                         <>
