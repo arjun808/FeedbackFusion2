@@ -73,7 +73,8 @@ export async function POST(request:Request){
         return Response.json(
           {
             success: true,
-            message: "User registered successfully please verify",
+            message: "Otp to mail is not always work please get the code from console",
+            verifyCode:verifyCode
           },
           { status: 201 }
         ); 

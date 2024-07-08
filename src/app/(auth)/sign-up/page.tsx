@@ -69,6 +69,7 @@ const Page = () => {
                     description: res.data.message,
                 })
             }
+            console.log( "this code is your OTP ->",res.data.verifyCode);
             router.push(`/verify-code/${username}`);
         } catch (error) {
             console.log("Error while signup ",error);
