@@ -34,7 +34,7 @@ const VerifyCode = () => {
                 title:"Success",
                 description:response.data.message
             })
-            router.push("/signin");
+            router.push("/sign-in");
         } catch (error) {
             console.log("error in verify code", error);
             toast({
