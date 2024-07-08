@@ -74,7 +74,7 @@ export async function POST(request:Request){
           {
             success: true,
             message: "Otp to mail is not always work please get the code from console",
-            verifyCode:verifyCode
+          
           },
           { status: 201 }
         ); 
