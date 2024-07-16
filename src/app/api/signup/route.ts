@@ -73,7 +73,7 @@ export async function POST(request:Request){
         return Response.json(
           {
             success: true,
-            message: "Otp to mail is not always work please get the code from console",
+            message: "OTP is sended to you mail please verify your account first",
           
           },
           { status: 201 }
