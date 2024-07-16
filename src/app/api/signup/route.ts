@@ -1,4 +1,4 @@
-import { sendVerficationEmail } from "@/helpers/sendVerificationEmail";
+import { sendVerificationEmail } from "@/helpers/sendVerificationEmail";
 import dbConnect from "@/lib/dbConnect";
 import UserModel from "@/models/UserModel";
 import bcrypt from 'bcryptjs'
@@ -59,7 +59,7 @@ export async function POST(request:Request){
             await newUser.save();
         }
         // send verificetion email
-        const emailResponse=await sendVerficationEmail(username,email,verifyCode);
+        const emailResponse=await sendVerificationEmail(username,email,verifyCode);
         console.log(emailResponse);
         if(!emailResponse.success){
             return Response.json(
